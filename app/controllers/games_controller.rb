@@ -9,8 +9,8 @@ class GamesController < ApplicationController
   # "https://wagon-dictionary.herokuapp.com/:word"
 
   def score
-    @uri = URI.parse("https://wagon-dictionary.herokuapp.com/:word")
-    @word = params[:word][:uri]
+#    @uri = URI.parse("https://wagon-dictionary.herokuapp.com/:word")
+    @word = params[:word]
     @letters = params[:letters].split(" ")
     @isincluded = true
     @word.chars.each do |x|
